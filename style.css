@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0fe9f8;
+    color: #333;
+}
+
+header {
+    background-color: #0fe9f8;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links  {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cta {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(88, 88, 255);
+    border-bottom: solid rgb(88, 88, 255);
+    border-top: solid rgb(88, 88, 255);
+    border-left: solid rgb(88, 88, 255);
+    border-right: solid rgb(88, 88, 255);
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.email-subscription {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-subscription input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.email-subscription button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff5722;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.trusted {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin-top: -100px;
+    padding: 50px 20px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+}
+
+.feature-item img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.fontchange {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1,
+p {
+    margin-bottom: 0 !important;
+}
+
+
+.gap {
+    margin-bottom: 70px !important;
+}
+
+span{
+    font-size: xx-large;
+}
+
+
+
+
+
+/* Large desktops (1200px and up) */
+@media (min-width: 1200px) {
+    .nav-links {
+        gap: 30px;
+    }
+}
+
+/* Tablets (landscape and portrait) */
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .nav-links li {
+        display: block;
+        text-align: center;
+    }
+    .cta {
+        margin-top: 20px;
+    }
+    .hero {
+        padding: 80px 20px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .email-subscription {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .email-subscription input,
+    .email-subscription button {
+        width: 100%;
+        font-size: 0.9em;
+    }
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .hero p {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+    .email-subscription input,
+    .email-subscription button {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .features {
+        padding: 30px 10px;
+    }
+    .feature-item {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    .feature-item img {
+        width: 40px;
+    }
+}
+
+/* Extra small devices (portrait) */
+@media (max-width: 480px) {
+    .logo img {
+        width: 30px;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    .hero p {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+    .features {
+        padding: 20px 10px;
+    }
+}
